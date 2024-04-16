@@ -1,0 +1,36 @@
+<html>
+</html>
+<style>
+p1{
+    font-size: 1.2em;
+}
+p{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 2em;
+}
+</style>
+<head>
+    <title>
+        success
+    </title>
+</head>
+<body>
+    <h2>
+        bank churn prediction
+    </h2>
+    <p1>
+        file uploaded successfully
+    </p1>
+    <p>
+        prediction: {{prediction}}
+    </p>
+    {% block content %}
+    <p>
+        input from file: 
+    </p>
+    {{input | safe}}
+    {% endblock %}
+    
+</body>

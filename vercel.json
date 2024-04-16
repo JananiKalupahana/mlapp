@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src":"mlapp.py",
+            "use":"@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"mlapp.py"
+        }
+    ]
+}
